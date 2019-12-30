@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+// 赤色の文字
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.red {
+  color: tomato;
+  &:hover {
+    color: red;
+  }
+}
+
+// 箱のデザイン
+.box {
+  width:100px;
+  height: 100px;
+  background: #aaa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+  margin: 0 16px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0.7;
+
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.anime-box {
+  width: 10px;
+  height: 100px;
+  transition: 1s ease;
+  background: cornflowerblue;
+  &:hover {
+    width: 200px;
+  }
+}
+
+// ボタン
+.btn {
+  background: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    background: #555;
+    color: #fff
+  }
+}
+
+// SP Nav
+.sp-nav {
+  background: #eee;
+  display: none;
+  padding: 8px;
+  a:hover {
+    text-decoration: underline #555;
+  }
+}
